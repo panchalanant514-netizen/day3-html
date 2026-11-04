@@ -1,64 +1,221 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SoundPods Mini</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mini Blog Website</title>
 </head>
+
 <body>
 
-  <header>
-    <nav>
-      <a class="logo" href="#home">SoundPods Mini</a>
-      <div>
-        <a href="#features">Features</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
+    <!-- Header Section -->
+    <header id="home">
 
-  <main>
-    <section class="product" id="home">
-      <img src="images/headphone.jpg" alt="A pair of wireless headphones">
+        <h1>My Mini Blog</h1>
+        <p>Sharing Knowledge, Ideas and Experiences</p>
 
-      <div class="product-info">
-        <h1>SoundPods Mini</h1>
-        <p>Small wireless headphones with big, clear sound.</p>
-        <p class="price">Rs 2500</p>
-        <a class="button" href="#contact">Buy Now</a>
-      </div>
-    </section>
+        <!-- Navigation Menu -->
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#blog">Blog</a> |
+            <a href="#contact">Contact</a>
+        </nav>
 
-    <section class="features" id="features">
-      <h2>Features</h2>
-      <ul>
-        <li>Wireless Bluetooth connection</li>
-        <li>Comfortable, lightweight design</li>
-        <li>Up to 8 hours of listening time</li>
-      </ul>
-    </section>
+    </header>
 
-    <section class="contact" id="contact">
-      <h2>Contact us</h2>
-      <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
+    <hr>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+    <!-- Main Content -->
+    <main>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <h2>Welcome to My Blog Website</h2>
+        <p>Explore interesting articles about technology,
+            education and web development.</p>
 
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-  </main>
+        <!-- Blog Articles Section -->
+        <section id="blog">
 
-  <footer>
-    <p>2026 SoundPods Mini</p>
-  </footer>
+            <h2>Latest Blog Articles</h2>
+
+            <!-- Article 1 -->
+            <article>
+
+                <h3>1. Introduction to HTML5</h3>
+
+                <p><strong>Author:</strong> Deep Panchal</p>
+                <p><strong>Published Date:</strong>
+                    <time datetime="2026-11-01">1 November 2026</time>
+                </p>
+
+                <p>
+                    HTML5 is the latest major version of HTML.
+                    It provides semantic elements that help
+                    developers create well-structured webpages.
+                </p>
+
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                    Read More
+                </a>
+
+            </article>
+
+            <hr>
+
+            <!-- Article 2 -->
+            <article>
+
+                <h3>2. Importance of Web Development</h3>
+
+                <p><strong>Author:</strong> Rahul Patel</p>
+                <p><strong>Published Date:</strong>
+                    <time datetime="2026-11-02">2 November 2026</time>
+                </p>
+
+                <p>
+                    Web development is the process of creating
+                    websites and web applications. It includes
+                    frontend and backend development.
+                </p>
+
+                <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development">
+                    Read More
+                </a>
+
+            </article>
+
+            <hr>
+
+            <!-- Article 3 -->
+            <article>
+
+                <h3>3. Why Should We Learn Programming?</h3>
+
+                <p><strong>Author:</strong> Priya Shah</p>
+                <p><strong>Published Date:</strong>
+                    <time datetime="2026-11-03">3 November 2026</time>
+                </p>
+
+                <p>
+                    Programming helps us solve problems,
+                    develop logical thinking and create
+                    useful software applications.
+                </p>
+
+                <a href="https://www.w3schools.com/programming/">
+                    Read More
+                </a>
+
+            </article>
+
+        </section>
+
+        <hr>
+
+        <!-- About Section -->
+        <section id="about">
+
+            <h2>About Our Blog</h2>
+
+            <p>
+                My Mini Blog is a website where readers can
+                explore articles about technology, education,
+                programming and web development.
+                Our goal is to share useful knowledge and
+                make learning easy for everyone.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <!-- Sidebar Section -->
+        <aside>
+
+            <h2>Popular Blog Topics</h2>
+
+            <ul>
+                <li>HTML and HTML5</li>
+                <li>CSS and Web Design</li>
+                <li>JavaScript</li>
+                <li>Web Development</li>
+                <li>Programming Languages</li>
+            </ul>
+
+        </aside>
+
+        <hr>
+
+        <!-- Latest Blog Posts Table -->
+        <section>
+
+            <h2>Latest 3 Blog Posts</h2>
+
+            <table border="1">
+
+                <caption>Recently Published Articles</caption>
+
+                <thead>
+                    <tr>
+                        <th>Blog Title</th>
+                        <th>Author</th>
+                        <th>Publication Date</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Introduction to HTML5</td>
+                        <td>Deep Panchal</td>
+                        <td>1 November 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>Importance of Web Development</td>
+                        <td>Rahul Patel</td>
+                        <td>2 November 2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>Why Should We Learn Programming?</td>
+                        <td>Priya Shah</td>
+                        <td>3 November 2026</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: myminiblog@gmail.com</p>
+
+        <p>
+            Follow Us:
+            <a href="https://www.instagram.com/">Instagram</a> |
+            <a href="https://www.facebook.com/">Facebook</a> |
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+        </p>
+
+        <p>
+            <small>
+                &copy; 2026 My Mini Blog. All Rights Reserved.
+            </small>
+        </p>
+
+        <a href="#home">Back to Top</a>
+
+    </footer>
 
 </body>
 </html>
