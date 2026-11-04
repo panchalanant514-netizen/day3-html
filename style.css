@@ -1,0 +1,242 @@
+/* Apply to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background: white;
+    padding: 18px 30px;
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 40px;
+}
+
+/* Website name */
+header h2 {
+    color: #764ba2;
+}
+
+/* Navigation */
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #764ba2;
+}
+
+/* Form card */
+.container {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+
+    margin: 30px auto;
+    padding: 35px;
+
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.container h1 {
+    text-align: center;
+    color: #764ba2;
+    margin-bottom: 10px;
+    font-size: 27px;
+}
+
+/* Subtitle */
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+form > label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Text and email inputs */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 18px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Password input */
+.password-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.password-box:focus-within {
+    border-color: #764ba2;
+    box-shadow: 0 0 8px rgba(118, 75, 162, 0.3);
+}
+
+.password-box input {
+    width: 100%;
+    min-width: 0;
+    padding: 13px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+/* Show password button */
+.show-btn {
+    width: auto;
+    padding: 8px 12px;
+    margin-right: 5px;
+    background: white;
+    color: #764ba2;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Input focus */
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #764ba2;
+    box-shadow: 0 0 8px rgba(118, 75, 162, 0.3);
+}
+
+/* Input hover */
+input[type="text"]:hover,
+input[type="email"]:hover,
+.password-box:hover {
+    border-color: #764ba2;
+}
+
+/* Remember me section */
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 22px;
+    font-size: 13px;
+}
+
+.remember label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #444;
+}
+
+.remember a {
+    color: #764ba2;
+    text-decoration: none;
+}
+
+.remember a:hover {
+    text-decoration: underline;
+}
+
+/* Main button */
+.main-btn {
+    width: 100%;
+    padding: 13px;
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* Button hover */
+.main-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(118, 75, 162, 0.4);
+}
+
+/* Bottom text */
+.bottom-text {
+    text-align: center;
+    margin-top: 22px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.bottom-text a {
+    color: #764ba2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bottom-text a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsive design */
+@media (max-width: 500px) {
+
+    body {
+        padding: 12px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .container {
+        padding: 25px 20px;
+        margin: 20px auto;
+    }
+
+    .remember {
+        font-size: 12px;
+    }
+}

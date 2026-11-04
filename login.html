@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - MyWebsite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>🌐 MyWebsite</h2>
+
+        <nav>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <h1>Welcome Back!</h1>
+        <p class="subtitle">Login to your account</p>
+
+        <form onsubmit="return login()">
+
+            <label>Email / Username</label>
+            <input type="text" id="loginEmail"
+                   placeholder="Enter email or username" required>
+
+            <label>Password</label>
+            <div class="password-box">
+                <input type="password" id="loginPassword"
+                       placeholder="Enter password" minlength="6" required>
+                <button type="button" class="show-btn"
+                        onclick="togglePassword('loginPassword', this)">
+                    Show
+                </button>
+            </div>
+
+            <div class="remember">
+                <label>
+                    <input type="checkbox" id="remember">
+                    Remember Me
+                </label>
+
+                <a href="#" onclick="forgotPassword(event)">
+                    Forgot Password?
+                </a>
+            </div>
+
+            <button type="submit" class="main-btn">Login</button>
+
+        </form>
+
+        <p class="bottom-text">
+            Don't have an account?
+            <a href="signup.html">Create Account</a>
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
