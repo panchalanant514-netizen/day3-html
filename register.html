@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+
+    <style>
+        /* General styling */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #eeee86, #764ba2);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        /* Form card */
+        .container {
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.5);
+        }
+
+        /* Heading */
+        h1 {
+            text-align: center;
+            color: #c1c407;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: gray;
+            margin-bottom: 25px;
+        }
+
+        /* Labels */
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Input fields */
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            font-size: 15px;
+            transition: 0.1s;
+        }
+
+        /* Focus effect */
+        input:focus, select:focus {
+            outline: none;
+            border-color: #92a2eb;
+            box-shadow: 0 0 10px rgba(102,126,234,0.15);
+        }
+
+        /* Hover effect */
+        input:hover, select:hover {
+            border-color: #667eea;
+        }
+
+        /* Gender section */
+        .gender {
+            margin-bottom: 18px;
+        }
+
+        .gender label {
+            display: inline-block;
+            font-weight: normal;
+            margin-right: 15px;
+        }
+
+        .gender input {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        /* Submit button */
+        button {
+            width: 30%;
+            padding: 13px;
+            background-color: #e2e042;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.1s;
+        }
+        
+        button:hover {
+            background-color: #dbfa5d;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            color: gray;
+            font-size: 13px;
+            margin-top: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Registration Form</h1>
+        <p class="subtitle">Create your student account</p>
+    <form>
+        <label> Enter Name :- </label>
+        <input type="text" placeholder="enter your name" required>
+
+        <label> Enter Email :- </label>
+        <input type="email" placeholder="enter email address" required>
+
+        <label> Mobile Number :- </label>
+        <input type="tel" placeholder="enter Mobile no" required>
+
+        <label> Password </label>
+         <input type="password" placeholder="enter password" required>
+
+
+        <label> Date of Birth:- </label>
+        <input type="date" required>
+
+        <label> Gender :- </label>
+        <div class="gender">
+            <label>
+                <input type="radio" name="gender" required>Male
+            </label>
+
+            <label>
+                <input type="radio" name="gender" required>Female
+            </label>
+
+            <label>
+                <input type="radio" name="gender" required>Others
+            </label>
+        
+        </div>
+        <label>Select Couurse</label>
+        <select required?>
+            <option value="">Choose Your Course</option>
+            <option>Bcom</option>
+            <option>Mcom</option>
+            <option>Bca</option>
+            <option>Mca</option>
+            <option>Bsc</option>
+            <option>Msc</option>
+            <option>Bba</option>
+            <option>Mba</option>
+        </select><br><br>
+
+       
+         <button type="submit">Register</button>
+
+    </form>
+    </div>
+    </body>
+</html>
