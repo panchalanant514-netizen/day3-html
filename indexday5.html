@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mini Blog</title>
+
+    <style>
+
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+}
+
+/* Header */
+
+header {
+    background-color: #172554;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+    font-size: 30px;
+}
+
+/* Navigation */
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 30px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #0980ff;
+}
+
+/* Hero Section */
+
+.hero {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* Blog Section */
+
+.blog {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 28px;
+    color: #172554;
+}
+
+/* Container */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Blog Cards */
+
+.card {
+    background-color: white;
+    width: 33.33%;
+    padding: 25px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.card h3 {
+    color: #1d4ed8;
+    font-size: 21px;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.card a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: #172554;
+}
+
+/* About Section */
+
+.about {
+    background-color: #e2e8f0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    background-color: #172554;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Mini Blog</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#blog">Blog</a>
+           
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <h2>Welcome to My Blog</h2>
+            <p>Explore knowledge, technology and new ideas.</p>
+        </section>
+
+        <section class="blog" id="blog">
+            <h2>Latest Articles</h2>
+
+            <div class="container">
+
+                <article class="card">
+                    <h3>Introduction to HTML</h3>
+                    <p>
+                        HTML stands for HyperText Markup Language.
+                        It is used to create the structure of websites.
+                    </p>
+                    <a href="#">Read More</a>
+                </article>
+
+                <article class="card">
+                    <h3>Introduction to CSS</h3>
+                    <p>
+                        CSS stands for Cascading Style Sheets.
+                        It is used to style and design web pages.
+                    </p>
+                    <a href="#">Read More</a>
+                </article>
+
+                <article class="card">
+                    <h3>Introduction to JavaScript</h3>
+                    <p>
+                        JavaScript is a programming language
+                        used to make websites interactive.
+                    </p>
+                    <a href="#">Read More</a>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Us</h2>
+            <p>
+                This blog shares information about web development
+                and modern technologies.
+            </p>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <p>© 2026 My Mini Blog | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
