@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Card Layout</title>
+
+    
+    <style>
+
+/* ===== GLOBAL STYLING ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f5f7ff;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(135deg, #312e81, #6366f1);
+    color: white;
+    padding: 22px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    box-shadow: 0 4px 15px rgba(49, 46, 129, 0.2);
+}
+
+header h1 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fde68a;
+    transform: translateY(-3px);
+}
+
+/* ===== COURSES SECTION ===== */
+.courses {
+    padding: 70px 7%;
+    text-align: center;
+}
+
+.courses h2 {
+    font-size: 34px;
+    color: #312e81;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #64748b;
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+
+/* ===== CARD CONTAINER ===== */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== INDIVIDUAL CARD ===== */
+.card {
+    background: white;
+    padding: 35px 22px;
+    border-radius: 18px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+    border: 1px solid #e2e8f0;
+
+    transition: all 0.3s ease;
+}
+
+/* CARD HOVER EFFECT */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(99, 102, 241, 0.18);
+    border-color: #818cf8;
+}
+
+/* CARD ICON */
+.card-icon {
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #eef2ff;
+    border-radius: 50%;
+
+    font-size: 38px;
+}
+
+/* CARD HEADING */
+.card h3 {
+    font-size: 23px;
+    color: #3730a3;
+}
+
+/* CARD DESCRIPTION */
+.card p {
+    color: #64748b;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* CARD BUTTON */
+.card a {
+    display: inline-block;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+
+    color: white;
+    text-decoration: none;
+
+    padding: 11px 25px;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background: linear-gradient(135deg, #312e81, #4f46e5);
+    transform: scale(1.05);
+}
+
+/* ===== ABOUT SECTION ===== */
+.about {
+    background: #e0e7ff;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.about h2 {
+    color: #312e81;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    color: #475569;
+    font-size: 16px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #1e1b4b;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
+}
+
+/* ===== TABLET RESPONSIVE ===== */
+@media (max-width: 992px) {
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .courses {
+        padding: 55px 5%;
+    }
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 22px 15px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .courses {
+        padding: 45px 18px;
+    }
+
+    .courses h2 {
+        font-size: 27px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 30px 20px;
+    }
+
+    .about {
+        padding: 40px 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Learning Hub</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main id="home">
+
+        <section class="courses" id="courses">
+
+            <h2>Our Popular Courses</h2>
+
+            <p class="subtitle">
+                Learn new skills and build your future.
+            </p>
+
+            <div class="card-container">
+
+                <!-- Card 1 -->
+                <article class="card">
+                    <div class="card-icon">🌐</div>
+                    <h3>HTML</h3>
+                    <p>1. Learn the basic structure of website using HTML.</p>
+                    <p>2. HTML is used to create the structure of a website.</p>
+                    <p>3. It adds headings, paragraphs, images, links, and forms.</p>
+                    <p>4. Example: Hotel name, room details, and booking form.</p>
+                        
+                    
+                    
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card">
+                    <div class="card-icon">🎨</div>
+                    <h3>CSS</h3>
+                    <p>1. Design beautiful websites using CSS styling.</p>
+                    <p>2. CSS is used to style and design a website.</p>
+                    <p>3. It adds colors, fonts, spacing, and layouts.</p>
+                    <p>4. Example: Designing hotel room cards and navigation bars. </p>
+                    
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>JavaScript</h3>
+                    <p>1. Make your websites interactive using JavaScript.</p>
+                    <p>2. JavaScript makes a website interactive and dynamic.</p>
+                    <p>3. It handles events, calculations, and form validation.</p>
+                    <p>4. Example: Calculating hotel booking prices.</p>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="card">
+                    <div class="card-icon">⚛️</div>
+                    <h3>React JS</h3>
+                    <p>1. Build modern user interfaces using React JS.</p>
+                    <p>2. React JS is a JavaScript library used to build user interfaces.</p>
+                    <p>3. It helps create reusable components.</p>
+                    <p>4. Example: Hotel room cards, login pages, and booking pages.</p>
+                    
+                </article>
+
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Us</h2>
+            <p>
+                We help students learn web development
+                with practical projects.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>© 2026 My Learning Hub. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
